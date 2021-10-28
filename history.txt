@@ -1,0 +1,20 @@
+ composer create-project symfony/website-skeleton ./
+ composer require --working-dir=tools/php-cs-fixer friendsofphp/php-cs-fixer
+ composer require --dev phpunit/phpunit symfony/test-pack
+ composer require --dev phpstan/phpstan-symfony
+ composer require --dev symfony/maker-bundle
+ composer require security
+ composer require admin
+php bin/console make:entity
+- User
+- Project
+- Ticket
+- Comment
+php bin/console make:admin:crud
+- User
+- Project
+- Ticket
+- Comment
+
+composer require stof/doctrine-extensions-bundle
+
